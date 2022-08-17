@@ -42,7 +42,7 @@ const WeatherBox = props => {
       <PickCity action={handleCityChange} />
       { weatherData  && !errorStatus && <WeatherSummary weatherData={weatherData} />}
       {pending && !errorStatus &&   <Loader />}
-      {errorStatus &&  <ErrorBox />}
+      {errorStatus &&  <ErrorBox>No such City !</ErrorBox>}
     </section>
   )
 };
